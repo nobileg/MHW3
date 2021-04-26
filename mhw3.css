@@ -1,0 +1,316 @@
+body {
+    height: 100vh;
+    margin: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    height: 250px;
+    background: url(img/header.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+#header_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#header_logo {
+    width: 200px;
+    height: 200px;
+}
+
+#header_container h1 {
+    margin: 0px;
+    text-shadow: 1px 1px black;
+}
+
+#menu {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+}
+
+#menu div {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+.spacer {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(34, 34, 34, 0.8);
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.button {
+    width: 75px;
+    padding: 5px 15px;
+    margin: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(165, 165, 165);
+    text-align: center;
+}
+
+.active,
+.button:hover {
+    background-color: rgb(34, 34, 34);
+    border: 1px solid rgb(34, 34, 34);
+    color: white;
+    cursor: pointer;
+}
+
+section {
+    width: 80%;
+    margin: 15px 0px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+section h1 {
+    font-family: 'Exo', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: unset;
+}
+
+section h2 {
+    font-family: 'Exo', sans-serif;
+    font-weight: normal;
+    display: inline-block;
+    margin: unset;
+}
+
+#section_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+#section_header h1 {
+    font-size: 3em;
+    margin-left: 20px;
+}
+
+#location {
+    height: 30px;
+    width: 300px;
+    font-size: 1.5em;
+    font-family: 'Exo', sans-serif;
+    border-radius: 20px;
+    padding: 2px 15px;
+}
+
+#find_nearest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+#location:focus {
+    outline: none;
+}
+
+#submit:focus {
+    outline: none;
+}
+
+#venues article {
+    display: flex;
+    padding: 10px;
+}
+
+.map {
+    border: 0px;
+}
+
+.info_container {
+    padding: 10px;
+}
+
+.info_container h1 {
+    font-size: 2.2em;
+}
+
+.info_container h2 {
+    font-size: 1.5em;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.info .icon {
+    width: 32px;
+    margin: 5px;
+}
+
+footer {
+    width: 100%;
+    height: 175px;
+    margin-top: auto;
+    background-color: rgb(34, 34, 34);
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#footer_container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.f_left {
+    align-items: center;
+}
+
+.f_right {
+    width: 45%;
+    align-items: flex-end;
+}
+
+#footer_logo {
+    width: 100px;
+    height: 100px;
+}
+
+#social_container {
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social {
+    width: 20px;
+    height: 20px;
+}
+
+#link_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#link_container a {
+    margin: 5px;
+}
+
+#link_container a:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#credits {
+    text-align: right;
+    font-size: 0.8em;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@media (max-width: 1070px) {
+    nav {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #section_header {
+        flex-direction: column;
+    }
+
+    section h1 {
+        font-size: 2em;
+        margin-left: 5px;
+    }
+
+    #venues article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        height: 250px;
+    }
+
+    #footer_container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .f_right {
+        width: 100%;
+        align-items: center;
+    }
+
+    #link_container a {
+        font-size: 0.9em;
+        margin: 10px;
+        text-align: center;
+    }
+
+    #credits {
+        text-align: center;
+    }
+}

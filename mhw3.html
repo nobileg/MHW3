@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Casa Farmaceutica &bullet; Sedi</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="mhw3.css">
+        <script src="script.js" defer="true"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">         <!-- HEADER font -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">            <!-- NAV font -->
+        <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap" rel="stylesheet">       <!-- TITLES font-->
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">    <!-- SECTION font -->
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">             <!-- FOOTER font -->
+    </head>
+    <body>
+        <header>
+            <div id="header_container">
+                <img id="header_logo" src="img/logo.png">
+                <h1>Casa Farmaceutica</h1>
+                <div id="menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </header>
+
+        <div id="content">
+            <nav>
+                <a class="button">Home</a>
+                <a class="button">Prodotti</a>
+                <a class="button">Ricerca</a>
+                <a class="button active">Sedi</a>
+                <a class="button">Contatti</a>
+            </nav>
+
+            <section>
+                <div id="section_header">
+                    <h1>Le nostre sedi</h1>
+                </div>
+                <div class="spacer"></div>
+                <form id="find_nearest">
+                    <h1>Trova la sede più vicina a te:</h1>
+                    <input id="location" type="text" placeholder="Località">
+                    <input id="submit" type="submit" value="Trova" class="button"> 
+                </form>
+                <div id="venues">
+                    <article data-address="Via Etnea, 300, 95129 Catania CT, Italia">
+                        <iframe
+                            class="map"
+                            width="350"
+                            height="250"
+                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCsSmpSIyOGrGLN8aNOgYPQo_1dackFSDU&q=Via+Etnea,300,Catania,Italia&zoom=14">
+                        </iframe>
+                        <div class="info_container">
+                            <h1>Catania</h1>
+                            <div class="info">
+                                <img src="img/location.png" class="icon">
+                                <h2>Via Etnea, 300, 95129 Catania CT, Italia</h2>
+                            </div>
+                            <div class="info">
+                                <img src="img/email.png" class="icon">
+                                <h2>catania@casafarmaceutica.it</h2>
+                            </div>
+                            <div class="info">
+                                <img src="img/phone.png" class="icon">
+                                <h2>(+39) 095 111 2222</h2>
+                            </div>
+                        </div>
+                    </article>
+                    <article data-address="Via del Corso, 157, 00187 Roma RM, Italia">
+                        <iframe
+                            class="map"
+                            width="350"
+                            height="250"
+                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCsSmpSIyOGrGLN8aNOgYPQo_1dackFSDU&q=Via+del+Corso,157,Roma,Italia&zoom=14">
+                        </iframe>
+                        <div class="info_container">
+                            <h1>Roma</h1>
+                            <div class="info">
+                                <img src="img/location.png" class="icon">
+                                <h2>Via del Corso, 157, 00187 Roma RM, Italia</h2>
+                            </div>
+                            <div class="info">
+                                <img src="img/email.png" class="icon">
+                                <h2>roma@casafarmaceutica.it</h2>
+                            </div>
+                            <div class="info">
+                                <img src="img/phone.png" class="icon">
+                                <h2>(+39) 06 111 2222</h2>
+                            </div>
+                        </div>
+                    </article>
+                    <article data-address="Via Monte Napoleone, 20, 20121 Milano MI, Italia">
+                        <iframe
+                            class="map"
+                            width="350"
+                            height="250"
+                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCsSmpSIyOGrGLN8aNOgYPQo_1dackFSDU&q=Via+Monte+Napoleone,20,Milano,Italia&zoom=14">
+                        </iframe>
+                        <div class="info_container">
+                            <h1>Milano</h1>
+                            <div class="info">
+                                <img src="img/location.png" class="icon">
+                                <h2>Via Monte Napoleone, 20, 20121 Milano MI, Italia</h2>
+                            </div>
+                            <div class="info">
+                                <img src="img/email.png" class="icon">
+                                <h2>milano@casafarmaceutica.it</h2>
+                            </div>
+                            <div class="info">
+                                <img src="img/phone.png" class="icon">
+                                <h2>(+39) 02 111 2222</h2>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <div id="footer_container">
+                <div class="footer_content f_left">
+                    <img id="footer_logo" src="img/logo.png">
+                    <div id="social_container">
+                        <a href="https://www.facebook.com/"><img class="social" src="img/facebook.png"></a>
+                        <a href="https://www.twitter.com/"><img class="social" src="img/twitter.png"></a>
+                        <a href="https://www.youtube.com/"><img class="social" src="img/youtube.png"></a>
+                        <a href="https://www.instagram.com/"><img class="social" src="img/instagram.png"></a>
+                    </div>
+                </div>
+
+                <div class="footer_content f_right">
+                    <div id="link_container">
+                        <a>Termini di utilizzo</a>
+                        <a>Privacy</a>
+                        <a>Cookie Policy</a>
+                        <a>Site Map</a>
+                        <a>Lavora con noi</a>
+                    </div>
+                    <div id="credits">
+                        Università degli Studi di Catania - Piazza Università, 2 - 95131 Catania<br>
+                        Dipartimento di Ingegneria Elettrica Elettronica e Informatica<br>
+                        Corso di Database and Web Programming<br>
+                        Giambattista Nobile, O46002144
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
